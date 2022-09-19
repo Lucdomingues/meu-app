@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, BrowserRouter, Route } from 'react-router-dom';
 
 import './App.css'
-import Home from './Pages/Home';
+import Home from './Pages/meu-app';
 import About from './Pages/About'
 import Technology from './Pages/Technology';
 import Projects from './Pages/Projects'
@@ -23,7 +23,7 @@ class App extends React.Component {
       <main>
         <BrowserRouter >
           <Switch>
-            <Route exact path='/' component={Home} />
+            <Route exact path='/meu-app' component={Home} />
             <Route exact path='/about' component={About} />
             <Route exact path='/technology' component={Technology} />
             <Route exact path='/projects' component={Projects} />
